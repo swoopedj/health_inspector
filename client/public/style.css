@@ -1,0 +1,17 @@
+body {
+	background: url(HiRes-1.jpg) no-repeat center center fixed;
+	background-size: cover;
+	overflow: auto;
+	padding-top: 20px;
+    padding-left: 20px;
+    height: 100%;
+}
+.main-title{
+	color: #EAB311;
+	font-size: 3em;
+	text-shadow:
+    -1px -1px 0 #146096,
+    1px -1px 0 #146096,
+    -1px 1px 0 #146096,
+    1px 1px 0 #146096; 
+}
