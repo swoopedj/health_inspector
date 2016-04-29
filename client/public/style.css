@@ -6,3 +6,12 @@ body {
     padding-left: 20px;
     height: 100%;
 }
+.main-title{
+	color: #EAB311;
+	font-size: 3em;
+	text-shadow:
+    -1px -1px 0 #146096,
+    1px -1px 0 #146096,
+    -1px 1px 0 #146096,
+    1px 1px 0 #146096; 
+}

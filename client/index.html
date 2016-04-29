@@ -1,14 +1,15 @@
 <!DOCTYPE html>
-<html ng-app>
+<html>
 <head>
 	<title>Health Inspector</title>
 	<link href='public/style.css' rel='stylesheet'>
 	<script src="../node_modules/angular/angular.js"></script>
 </head>
-<body>
-	<div>
-		<input type="text" ng-model="yourName" placeholder= "Enter your name">
-		<h1>Hello, {{ yourName }}!</h1>
+<body ng-app='inspectorApp'>
+	<nav>
+    <h1>We have lift-off!</h1>
+	</nav>
+	<div ng-view class='main-container'>
 	</div>
 </body>
 </html>
