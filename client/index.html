@@ -1,18 +1,24 @@
 <!DOCTYPE html>
-<html>
+<html ng-app='inspector'>
 <head>
 	<title>Health Inspector</title>
 	<link href='assets/style.css' rel='stylesheet'>
 	
+  
 </head>
-<body ng-app='inspectorApp'>
+<body>
   <nav>
     <h1 class="main-title">We have lift-off!</h1>
   </nav>
 	<div ng-view class='main-container'>
 
-    <script src="app/app.js"></script>
-    <script src="../node_modules/angular/angular.js"></script>
+
 	</div>
+  <footer>
+  <script src="./lib/angular/angular-1.5.5/angular.js"></script>
+    <script src="./lib/angular/angular-1.5.5/angular-route.js"></script>
+    <script src="app/app.js"></script>
+  <!-- <script src="../node_modules/angular/angular.js"></script> -->
+  </footer>
 </body>
 </html>

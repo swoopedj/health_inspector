@@ -3,15 +3,15 @@ angular.module('inspector', ['ngRoute'])
   $routeProvider
     .when('/search', {
       templateUrl: '../views/search.html',
-      controller: 'controllers/search_ctrl.js'
+      controller: 'controllers/SearchCtrl.js'
     })
     .when('/result', {
       templateUrl: '../views/results.html',
-      controller: 'controllers/results_ctrl.js'
+      controller: 'controllers/ResultsCtrl.js'
     })
     .when('/restaurant', {
       templateUrl: '../views/restaurant.html',
-      controller: 'controllers/rest_ctrl.js'
+      controller: 'controllers/RestaurantCtrl.js'
     })
     .otherwise({
       redirectTo: '/search'
