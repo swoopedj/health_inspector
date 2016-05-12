@@ -21,7 +21,7 @@ Results.findRestaurantsByZip = function(zip){
 
 }
 
-Reults.findRestaurantByName = function(name){
+Results.findRestaurantByName = function(name){
 //take in name, make GET request to external API 
 
 //return object with name, address, available inspection scores 
@@ -29,7 +29,7 @@ Reults.findRestaurantByName = function(name){
 
 } 
 
-Reults.findRestaurantByStreetName = function(name){
+Results.findRestaurantByStreetName = function(name){
 //take in street name, search addresses, make GET request to external API 
 
 }
