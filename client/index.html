@@ -3,21 +3,28 @@
 <head>
 	<title>Health Inspector</title>
 	<link href='assets/style.css' rel='stylesheet'>
-	
-  
 </head>
 <body>
   <nav>
     <h1 class="main-title">We have lift-off!</h1>
+    <a href="#/search">Search</a>
+    <a href="#/results">Results</a>
+    <a href="#/restaurant">Restaurant</a>
   </nav>
-	<div ng-view class='main-container'>
 
+  <div class="main-wrapper">
+	  <div ng-view class='main-container'>
+	  </div>
+  </div>
 
-	</div>
   <footer>
   <script src="./lib/angular/angular-1.5.5/angular.js"></script>
     <script src="./lib/angular/angular-1.5.5/angular-route.js"></script>
     <script src="app/app.js"></script>
+    <script src="app/routes.js"></script>
+    <script src="app/controllers/SearchCtrl.js"></script>
+    <script src="app/controllers/ResultsCtrl.js"></script>
+    <script src="app/controllers/RestaurantCtrl.js"></script>
   <!-- <script src="../node_modules/angular/angular.js"></script> -->
   </footer>
 </body>

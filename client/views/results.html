@@ -1,7 +1,9 @@
 <div class="results-container">
-  <div class="list-wrapper">
+
   <h1>Results View!</h1>
-    <ul class="results-list" ng-repeat="result in results">
-    </ul>
-  </div>
+    <a class="card-results" ng-repeat="result in results" ng-href='#/results/{{result.name}}'>
+      <div class='card' title='{result.name}}'>
+      </div>
+    </a>
+
 </div> 
