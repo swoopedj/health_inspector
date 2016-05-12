@@ -1,8 +1,8 @@
 <div class="search-container">
   <div class="search-wrapper">
-    <form name="searchForm" ng-submit="search()" id="search-form">
-        <input type="text" ng-model="search" placeholder="Enter restaurant name   or zip code">
-        <button>Search</button>
+    <form name="searchForm" id="search-form">
+        <input type="text" ng-model="restaurant" placeholder="Enter zip code">
+        <button ng-click='SearchCtrl.search(restaurant)'>Search</button>
     </form>
   </div>
 </div>
