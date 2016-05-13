@@ -3,7 +3,8 @@ angular.module('inspector')
   $routeProvider
     .when('/search', {
       templateUrl: '../views/search.html',
-      controller: 'SearchCtrl'
+      controller: 'SearchFormController',
+      controllerAs: 'SearchCtrl'
     })
     .when('/results', {
       templateUrl: '../views/results.html',
@@ -16,6 +17,11 @@ angular.module('inspector')
     .when('/restaurant', {
       templateUrl: '../views/restaurant.html',
       controller: 'RestaurantCtrl'
+    })
+    .when('/', {
+      templateUrl: '../views/search.html',
+      controller: 'SearchFormController',
+      controllerAs: 'SearchCtrl'
     })
     .otherwise({
       redirectTo: '/search'

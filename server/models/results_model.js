@@ -1,7 +1,7 @@
 var appToken = require('../lib/appToken').appToken;
 var request = require('request');
 
-module.exports = Results;
+var Results = module.exports;
 
 Results.parseUserInput = function(userInput){
   //if input is a zip code, call Results.findRestaurantsByZip
