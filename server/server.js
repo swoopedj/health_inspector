@@ -2,6 +2,9 @@ var express = require('express');
 var Path = require('path');
 var morgan = require('morgan');
 var routes = express.Router();
+var results_api = require('./api/results_api.js')
+
+routes.use(morgan('dev'));
 
 
 //route to index.html
@@ -9,7 +12,7 @@ var assetFolder = Path.resolve(__dirname, '../client/');
 routes.use(express.static(assetFolder));
 
 //api routes
-routes.use('/api/*', require('./api/results_api.js'));
+routes.use('/api', results_api, function(){console.log('made it to server.js')});
 
 if(process.env.NODE_ENV !== 'test'){
   routes.get('/*', function(request, response){
