@@ -12,7 +12,7 @@ var assetFolder = Path.resolve(__dirname, '../client/');
 routes.use(express.static(assetFolder));
 
 //api routes
-routes.use('/api/*', results_api, function(){console.log('made it to server.js')});
+routes.use('/api', results_api, function(){console.log('made it to server.js')});
 
 if(process.env.NODE_ENV !== 'test'){
   routes.get('/*', function(request, response){

@@ -4,7 +4,7 @@ angular.module('inspector.services', [])
     console.log('made it to getZipResults!')
     return $http({
       method: 'GET',
-      url:'/api/zip'
+      url:'/api/zip/' + zip
     })
     .then(function(resp){
       return resp.data
@@ -14,7 +14,7 @@ angular.module('inspector.services', [])
   var getStreetResults = function(street){
     return $http({
       method: 'GET',
-      url: '/api/restaurant/' + id
+      url: '/api/street/' + street
     })
     .then(function(resp){
       return resp.data
