@@ -1,6 +1,7 @@
 var express = require('express');
 var Path = require('path');
 var morgan = require('morgan');
+require('es6-promise').polyfill();
 var routes = express.Router();
 var results_api = require('./api/results_api.js')
 
