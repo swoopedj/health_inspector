@@ -8,7 +8,8 @@ angular.module('inspector')
     })
     .when('/results', {
       templateUrl: '../views/results.html',
-      controller: 'ResultsCtrl'
+      controller: 'ResultsDisplayController',
+      controllerAs: 'ResultsCtrl'
     })
     .when('/results/:id', {
       templateUrl: '../views/restaurant.html',

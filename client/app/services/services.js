@@ -6,8 +6,12 @@ angular.module('inspector.services', [])
       method: 'GET',
       url:'/api/zip/' + zip
     })
+    .catch(function(err){
+      console.log('ERRor==============', err)
+    })
     .then(function(resp){
-      return resp.data
+      console.log('in services: ', resp)
+      return resp.data;
     });
   };
 
@@ -15,6 +19,9 @@ angular.module('inspector.services', [])
     return $http({
       method: 'GET',
       url: '/api/street/' + street
+    })
+    .catch(function(err){
+      console.log('ERRor==============', err)
     })
     .then(function(resp){
       return resp.data
@@ -26,6 +33,9 @@ angular.module('inspector.services', [])
       method: 'GET',
       url: '/api/restaurant/' + id
     })
+    .catch(function(err){
+      console.log('ERRor==============', err)
+    })
     .then(function(resp){
       return resp.data
     });
@@ -36,4 +46,7 @@ angular.module('inspector.services', [])
     getStreetResults: getStreetResults,
     getRestaurantResults: getRestaurantResults
   };
-});
+})
+.service('ResultService', function(){
+  this.value = '';
+})

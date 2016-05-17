@@ -15,23 +15,45 @@ Results.findByZip = function(zip){
   var baseUrl =  'https://data.austintexas.gov/resource/nguv-n54k.json?zip_code=' + zip
   var options = {
     url: baseUrl,
-    'Accept': 'application/json',
     'X-App-Token': appToken
   };
-  console.log('**************', options)
-  return request.get(options)
-    .on('response', function(response){
-      console.log('response ===============', response.statusCode)
-      console.log('response ===============', response.headers)
+  return new Promise(function(resolve, reject){
+    request.get(options,
+    function(error, response, body){
+      if(error) {
+        console.log("Error!!!!!!!!!!!!", error);
+        return error
+      } else {
+        response.body = JSON.parse(body);
+        console.log('response-body-length: ', response.body.length)
+        resolve(response.body);
+      }
     });
-
-  //return array of restaurant results to client
+  });
+  
 
 }
 
 Results.findByName = function(name){
 //take in name, make GET request to external API 
-
+  var baseUrl =  'https://data.austintexas.gov/resource/nguv-n54k.json?zip_code=' + name
+  var options = {
+    url: baseUrl,
+    'X-App-Token': appToken
+  };
+  return new Promise(function(resolve, reject){
+    request.get(options,
+    function(error, response, body){
+      if(error) {
+        console.log("Error!!!!!!!!!!!!", error);
+        return error
+      } else {
+        response.body = JSON.parse(body);
+        console.log('response-body-length: ', response.body.length)
+        resolve(response.body);
+      }
+    });
+  });
 //return object with name, address, available inspection scores 
 //and their asociated dates, (and Reason for inspection?) to client
 
@@ -39,9 +61,43 @@ Results.findByName = function(name){
 
 Results.findByStreetName = function(street){
 //take in street name, search addresses, make GET request to external API 
-
+  var baseUrl =  'https://data.austintexas.gov/resource/nguv-n54k.json?zip_code=' + street
+  var options = {
+    url: baseUrl,
+    'X-App-Token': appToken
+  };
+  return new Promise(function(resolve, reject){
+    request.get(options,
+    function(error, response, body){
+      if(error) {
+        console.log("Error!!!!!!!!!!!!", error);
+        return error
+      } else {
+        response.body = JSON.parse(body);
+        console.log('response-body-length: ', response.body.length)
+        resolve(response.body);
+      }
+    });
+  });
 }
 
 Results.findByFacilityId = function(id){
-
+  var baseUrl =  'https://data.austintexas.gov/resource/nguv-n54k.json?zip_code=' + id
+  var options = {
+    url: baseUrl,
+    'X-App-Token': appToken
+  };
+  return new Promise(function(resolve, reject){
+    request.get(options,
+    function(error, response, body){
+      if(error) {
+        console.log("Error!!!!!!!!!!!!", error);
+        return error
+      } else {
+        response.body = JSON.parse(body);
+        console.log('response-body-length: ', response.body.length)
+        resolve(response.body);
+      }
+    });
+  });
 }

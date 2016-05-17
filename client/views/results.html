@@ -1,9 +1,9 @@
 <div class="results-container">
-
-  <h1>Results View!</h1>
-    <a class="card-results" ng-repeat="result in results" ng-href='#/results/{{result.name}}'>
-      <div class='card' title='{result.name}}'>
-      </div>
-    </a>
-
+    <div class="results-wrapper">
+      <a ng-href="result.facility_id">
+        <div class="result-card" ng-repeat="result in ResultsCtrl.results">
+         {{result.restaurant_name}}
+        </div>
+      </a>
+    </div>
 </div> 
