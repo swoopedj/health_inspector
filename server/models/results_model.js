@@ -21,7 +21,7 @@ Results.findByZip = function(zip){
     request.get(options,
     function(error, response, body){
       if(error) {
-        console.log("Error!!!!!!!!!!!!", error);
+        console.log("Error!", error);
         return error
       } else {
         response.body = JSON.parse(body);
@@ -46,11 +46,11 @@ Results.findByName = function(name){
     request.get(options,
     function(error, response, body){
       if(error) {
-        console.log("Error!!!!!!!!!!!!", error);
+        console.log("Error!", error);
         return error
       } else {
         response.body = JSON.parse(body);
-        console.log('NAME response-body-length: ', typeof response.body, response.body.length)
+        console.log('NAME response-body-length: ', response.body.length)
         resolve(response.body);
       }
     });
@@ -71,7 +71,7 @@ Results.findByStreetName = function(street){
     request.get(options,
     function(error, response, body){
       if(error) {
-        console.log("Error!!!!!!!!!!!!", error);
+        console.log("Error!", error);
         return error
       } else {
         response.body = JSON.parse(body);
@@ -92,11 +92,11 @@ Results.findByLocationId = function(id){
     request.get(options,
     function(error, response, body){
       if(error) {
-        console.log("Error!!!!!!!!!!!!", error);
+        console.log("Error!", error);
         return error
       } else {
         response.body = JSON.parse(body);
-        console.log('LOCATION response-body-length: ', typeof response.body, response.body.length)
+        console.log('LOCATION response-body-length: ', response.body.length)
         resolve(response.body);
       }
     });
