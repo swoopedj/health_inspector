@@ -16,16 +16,18 @@ router.get('/street/:street', function(req, res){
   })
 }); 
 
-router.get('/location/:location', function(req, res){
-  var results = Results.findByName(req.params.street)
+router.get('/name/:name', function(req, res){
+  var results = Results.findByName(req.params.name)
   .then(function(response){
+    console.log('Response IN API: =========', response);
     res.send(response);
   })
 });
 
-router.get('/facility/:id', function(req, res){
-  var results = Results.findByFacilityId(req.params.id)
+router.get('/location/:id', function(req, res){
+  var results = Results.findByLocationId(req.params.id)
   .then(function(response){
+    console.log('Response IN API: =========', response);
     res.send(response);
   })
 }); 

@@ -45,6 +45,11 @@ input[type=text] {
   margin: auto;
 }
 
+.location-name{
+  margin: auto;
+  text-align: center;
+}
+
 .result-card {
   color: #E2F4FC;
   padding: 5px;
