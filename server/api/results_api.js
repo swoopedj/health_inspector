@@ -16,16 +16,19 @@ router.get('/street/:street', function(req, res){
   })
 }); 
 
-router.get('/location/:location', function(req, res){
-  var results = Results.findByName(req.params.street)
+router.get('/name/:name', function(req, res){
+  console.log('made it to api')
+  var results = Results.findByName(req.params.name)
   .then(function(response){
+    console.log('NAME length IN API: =========', typeof response, response.length);
     res.send(response);
   })
 });
 
-router.get('/facility/:id', function(req, res){
-  var results = Results.findByFacilityId(req.params.id)
+router.get('/location/:id', function(req, res){
+  var results = Results.findByLocationId(req.params.id)
   .then(function(response){
+    console.log('LOCATION length IN API: =========', typeof response, response);
     res.send(response);
   })
 }); 

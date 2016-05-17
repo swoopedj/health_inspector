@@ -1,4 +1,11 @@
 <div class="restaurant-container">
   <h1>Restaurant View!</h1>
-  <h1>{{restaurant.name}}</h1>
+  <div class='inspections-container' ng-repeat='visit in LocationCtrl.visits'>
+    <div class='result-card'>
+      <h1>{{visit.restaurant_name}}</h1>
+      {{visit.date}}
+      {{visit.process_description}}
+      {{visit.socre}}
+    </div>
+  </div>
 </div>

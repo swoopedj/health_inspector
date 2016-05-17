@@ -1,7 +1,7 @@
 <div class="results-container">
-    <div class="results-wrapper">
-      <a ng-href="result.facility_id">
-        <div class="result-card" ng-repeat="result in ResultsCtrl.results">
+    <div class="results-wrapper" ng-repeat="result in ResultsCtrl.results">
+      <a ng-href="/location" ng-click="ResultsCtrl.findByLocationId(result.facility_id)">
+        <div class="result-card">
          {{result.restaurant_name}}
         </div>
       </a>

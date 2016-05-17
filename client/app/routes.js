@@ -11,13 +11,10 @@ angular.module('inspector')
       controller: 'ResultsDisplayController',
       controllerAs: 'ResultsCtrl'
     })
-    .when('/results/:id', {
+    .when('/location', {
       templateUrl: '../views/restaurant.html',
-      controller: 'RestaurantCtrl'
-    })
-    .when('/restaurant', {
-      templateUrl: '../views/restaurant.html',
-      controller: 'RestaurantCtrl'
+      controller: 'LocationDisplayController',
+      controllerAs: 'LocationCtrl'
     })
     .when('/', {
       templateUrl: '../views/search.html',
