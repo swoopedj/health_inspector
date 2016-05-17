@@ -17,7 +17,6 @@ router.get('/street/:street', function(req, res){
 }); 
 
 router.get('/name/:name', function(req, res){
-  console.log('made it to api')
   var results = Results.findByName(req.params.name)
   .then(function(response){
     console.log('Response IN API: =========', response);

@@ -51,7 +51,7 @@ angular.module('inspector.services', [])
     })
     .then(function(resp){
       console.log('Response in getLocationResults: ', resp)
-      return resp;
+      return resp.data;
     });
   };
 
