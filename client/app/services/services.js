@@ -10,7 +10,7 @@ angular.module('inspector.services', [])
       console.log('ERRor==============', err)
     })
     .then(function(resp){
-      console.log('in services^^^^^^^^^^^^^^^^^^^^^^^^^^^^^', resp)
+      console.log('in services: ', resp)
       return resp.data;
     });
   };
@@ -46,4 +46,7 @@ angular.module('inspector.services', [])
     getStreetResults: getStreetResults,
     getRestaurantResults: getRestaurantResults
   };
-});
+})
+.service('ResultService', function(){
+  this.value = '';
+})

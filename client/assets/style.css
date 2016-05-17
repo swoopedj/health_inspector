@@ -1,13 +1,23 @@
 body {
-	background: url(HiRes-1.jpg) no-repeat center center fixed;
+	background: url(HellSpectrBG.jpg) no-repeat center center fixed;
 	background-size: cover;
 	overflow: auto;
 	padding-top: 20px;
     padding-left: 20px;
     height: 100%;
 }
+
+h1 {
+  font-family: Georgia, serif;
+}
+
+a:link {
+  text-decoration: none;
+}
+
 .main-title {
-  margin: auto;
+  margin: 0 auto;
+  text-align: center;
   width: 60%;
   padding: 10px;
 	color: #EAB311;
@@ -19,7 +29,30 @@ body {
     1px 1px 0 #146096; 
 }
 .search-wrapper {
+  width: 50%;
+  margin: 0 auto; 
+}
+
+#search-form {
+  margin: 0 auto;
+  text-align: center;
+}
+input[type=text] {
+  width: 40%;
+  margin: 0 auto; 
+}
+.results-wrapper {
   margin: auto;
-  width: 60%;
-  background: rbga(187, 194, 196, 0.5) 
+}
+
+.result-card {
+  color: #E2F4FC;
+  padding: 5px;
+  text-align: center;
+  width: 30%;
+  background-color: rgba(50, 50, 50, 0.75);
+  border-radius: 10px;
+  font-size: 1em;
+  margin: 0 auto 15px auto;
+
 }
