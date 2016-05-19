@@ -11,6 +11,8 @@ routes.use(morgan('dev'));
 //route to index.html
 var assetFolder = Path.resolve(__dirname, '../client/');
 routes.use(express.static(assetFolder));
+var angular = Path.resolve(__dirname, '../node_modules/')
+routes.use('/scripts', express.static(angular));
 
 //api routes
 routes.use('/api', results_api, function(){console.log('made it to server.js')});

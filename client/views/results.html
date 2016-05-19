@@ -2,7 +2,13 @@
     <div class="results-wrapper" ng-repeat="result in ResultsCtrl.results">
       <a ng-href="/" ng-click="ResultsCtrl.findByLocationId(result.facility_id)">
         <div class="result-card">
-         {{result.restaurant_name}}
+         <div class="result-name">{{result.restaurant_name}}</div>
+           <div class="result-address">
+           {{result.address_address}} 
+           {{result.address_city}}, 
+           {{result.address_state}}, 
+           {{result.address_zip}}
+           </div>
         </div>
       </a>
     </div>
