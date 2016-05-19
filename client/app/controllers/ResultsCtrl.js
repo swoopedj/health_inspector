@@ -9,7 +9,15 @@ angular.module('inspector.results', [])
     $routeParams.id = id;
     Search.getLocationResults(id)
     .then(function(inspections){
-      ResultService.inspections = inspections;
+      var sortedInspections = inspections.sort(function(a, b){
+        if(a.inspection_date < b.inspection_date){
+          return 1;
+        }
+        if(a.inspection_date > b.inspection_date){
+          return -1;
+        } else {return 0}
+      });
+      ResultService.inspections = sortedInspections;
 
     })
     .then(function(){

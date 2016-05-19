@@ -4,5 +4,5 @@ angular.module('inspector.location', [])
   var controller = this;
   this.inspections = ResultService.inspections;
   console.log(this.inspections);
-  console.log('LocationController => this.loction: ', this.inspections.data);
+  console.log('LocationController => this.location: ', this.inspections.data);
 });
