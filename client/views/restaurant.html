@@ -5,12 +5,12 @@
   <div class='inspections-container' ng-repeat='inspection in LocationCtrl.inspections'>
     <div class='location-card'>
       
-      Inspection Date: {{inspection.inspection_date | date}} <br>
-      Reason: {{inspection.process_description}}<br>
-      Score: {{inspection.score}}
+      <strong>Inspection Date:</strong> {{inspection.inspection_date | date}} <br>
+      <strong>Reason:</strong> {{inspection.process_description}}<br>
+      <strong>Score:</strong> {{inspection.score}}
       
       <div class="location-score-block">
-      {{inspection.score}}
+        <span ng-class="{'warning-score': inspection.score < 60, 'failing-score' : inspection.score < 50}" >{{inspection.score}}</span>
       
       </div>
     </div>

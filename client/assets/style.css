@@ -1,3 +1,8 @@
+html {
+    overflow: hidden;
+    height: 100%;
+}
+
 body {
 	background: url(HellSpectrBG.jpg) no-repeat center center fixed;
 	background-size: cover;
@@ -46,6 +51,8 @@ input[type=text] {
 }
 
 .location-name{
+  color: #185888;
+  font-family: calibri,helvetica,sans-serif;
   margin: auto;
   text-align: center;
 }
@@ -86,15 +93,25 @@ input[type=text] {
 .location-score-block {
   color: #185888;
   height: 50px;
-  width: 50px;
+  width: 60px;
   background-color: #E2F4FC;
   border-radius: 10px;
   float: right;
   text-align: center;
   font-size: 2.25em;
-  margin-bottom: 5px;
+  margin: 5px 5px 5px 5px;
+  vertical-align: middle;
   padding-top: 5px;
   position: relative;
 }
+
+.warning-score {
+  color: #EAB311;
+}
+
+.failing-score {
+  color: red;
+}
+
 
 
