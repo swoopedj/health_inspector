@@ -1,6 +1,8 @@
 var appToken = require('../lib/appToken').appToken;
 var request = require('request');
 
+var mock_result = require('../../test/server/models/zip_78728_results.js');
+
 var Results = module.exports;
 
 Results.parseUserInput = function(userInput){
@@ -11,7 +13,6 @@ Results.parseUserInput = function(userInput){
 }
 
 Results.findByZip = function(zip){
-  //take in zip code, make GET request to external API
   var baseUrl =  'https://data.austintexas.gov/resource/nguv-n54k.json?zip_code=' + zip
   var options = {
     url: baseUrl,
