@@ -103,3 +103,29 @@ Results.findByLocationId = function(id){
     });
   });
 }
+
+Results.updateDB = function(){
+  var baseUrl = 'https://data.austintexas.gov/api/views/ecmv-9xxi/rows.json?accessType=DOWNLOAD'
+  // 'data' property holds an array of inspection arrays
+  var options = {
+    url: baseUrl,
+    'X-App-Token': appToken
+  }
+  return new Promise(function(resolve, reject){
+    request.get(options,
+      function(error, response, body){
+        if(error){
+          console.log("Error!", error);
+          return error
+        } else {
+          response.body = JSON.parse(body);
+          console.log('UPDATE response-body-length: ', response.body.length);
+          resolve(response.body)
+        }
+      })
+  })
+
+}
+
+
+

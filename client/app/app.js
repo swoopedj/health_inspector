@@ -3,5 +3,6 @@ angular.module('inspector', [
   'inspector.results',
   'inspector.location',
   'inspector.services',
-  'ngRoute'
+  'ngRoute',
+  'ngAnimate'
   ])
