@@ -4,17 +4,20 @@ angular.module('inspector')
     .when('/search', {
       templateUrl: '../views/search.html',
       controller: 'SearchFormController',
-      controllerAs: 'SearchCtrl'
+      controllerAs: 'SearchCtrl',
+      reloadOnSearch: false
     })
     .when('/results', {
       templateUrl: '../views/results.html',
       controller: 'ResultsDisplayController',
-      controllerAs: 'ResultsCtrl'
+      controllerAs: 'ResultsCtrl',
+      reloadOnSearch: false
     })
     .when('/location', {
       templateUrl: '../views/restaurant.html',
       controller: 'LocationDisplayController',
-      controllerAs: 'LocationCtrl'
+      controllerAs: 'LocationCtrl',
+      reloadOnSearch: false
     })
     .when('/', {
       templateUrl: '../views/search.html',
