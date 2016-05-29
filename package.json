@@ -8,6 +8,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "grunt",
     "start": "node server/server.js"
   },
   "author": "",
@@ -17,9 +18,17 @@
     "angular-route": "^1.5.5",
     "body-parser": "^1.15.0",
     "bootstrap": "^3.3.6",
+    "dotenv": "^2.0.0",
     "es6-promise": "^3.2.1",
     "express": "^4.13.4",
+    "grunt": "^1.0.1",
     "morgan": "^1.7.0",
     "request": "^2.72.0"
+  },
+  "devDependencies": {
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-cssmin": "^1.0.1",
+    "grunt-contrib-uglify": "^1.0.1",
+    "grunt-contrib-watch": "^1.0.0"
   }
 }

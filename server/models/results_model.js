@@ -16,7 +16,7 @@ Results.findByZip = function(zip){
   var baseUrl =  'https://data.austintexas.gov/resource/nguv-n54k.json?zip_code=' + zip
   var options = {
     url: baseUrl,
-    'X-App-Token': appToken
+    'X-App-Token': process.env.API_TOKEN
   };
   return new Promise(function(resolve, reject){
     request.get(options,
@@ -40,7 +40,7 @@ Results.findByName = function(name){
   var baseUrl =  'https://data.austintexas.gov/resource/nguv-n54k.json?$q=' + name
   var options = {
     url: baseUrl,
-    'X-App-Token': appToken
+    'X-App-Token': process.env.API_TOKEN
   };
   console.log('baseUrl = ', baseUrl)
   return new Promise(function(resolve, reject){
@@ -66,7 +66,7 @@ Results.findByStreetName = function(street){
   var baseUrl =  'https://data.austintexas.gov/resource/nguv-n54k.json?zip_code=' + street
   var options = {
     url: baseUrl,
-    'X-App-Token': appToken
+    'X-App-Token': process.env.API_TOKEN
   };
   return new Promise(function(resolve, reject){
     request.get(options,
@@ -87,7 +87,7 @@ Results.findByLocationId = function(id){
   var baseUrl =  'https://data.austintexas.gov/resource/nguv-n54k.json?facility_id=' + id
   var options = {
     url: baseUrl,
-    'X-App-Token': appToken
+    'X-App-Token': process.env.API_TOKEN
   };
   return new Promise(function(resolve, reject){
     request.get(options,
