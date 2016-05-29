@@ -26,3 +26,5 @@ angular.module('inspector.results', [])
   }
 
 });
+
+ResultsDisplayController.$inject = ['$scope', '$routeParams', '$location', 'ResultService', 'Search']

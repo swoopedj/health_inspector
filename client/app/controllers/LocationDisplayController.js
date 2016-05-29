@@ -1,6 +1,7 @@
 angular.module('inspector.location', [])
-
-.controller('LocationDisplayController', function($scope, $http, $routeParams, ResultService) {
+.controller('LocationDisplayController', function(ResultService) {
   var controller = this;
   this.inspections = ResultService.inspections;
 });
+
+LocationDisplayController.$inject = ['ResultService']
