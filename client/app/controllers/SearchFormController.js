@@ -63,4 +63,5 @@ angular.module('inspector.search', [])
   };
 });
 
-SearchFormController.$inject = ['$location', '$http', '$routeParams', 'Search', 'ResultService']
+// SearchFormController.$inject = ['$location', '$http', '$routeParams', 'Search', 'ResultService']
+
