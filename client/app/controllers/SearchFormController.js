@@ -60,7 +60,7 @@ angular.module('inspector.search', [])
       })
 
     }
-
-
   };
 });
+
+SearchFormController.$inject = ['$location', '$http', '$routeParams', 'Search', 'ResultService']
