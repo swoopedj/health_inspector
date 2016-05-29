@@ -25,7 +25,6 @@ Results.findByZip = function(zip){
         return error
       } else {
         response.body = JSON.parse(body);
-        console.log('response-body-length: ', response.body.length)
         resolve(response.body);
       }
     });
@@ -41,7 +40,6 @@ Results.findByName = function(name){
     url: baseUrl,
     'X-App-Token': process.env.API_TOKEN
   };
-  console.log('baseUrl = ', baseUrl)
   return new Promise(function(resolve, reject){
     request.get(options,
     function(error, response, body){
@@ -50,7 +48,6 @@ Results.findByName = function(name){
         return error
       } else {
         response.body = JSON.parse(body);
-        console.log('NAME response-body-length: ', response.body.length)
         resolve(response.body);
       }
     });
@@ -75,7 +72,6 @@ Results.findByStreetName = function(street){
         return error
       } else {
         response.body = JSON.parse(body);
-        console.log('response-body-length: ', response.body.length)
         resolve(response.body);
       }
     });
@@ -96,7 +92,6 @@ Results.findByLocationId = function(id){
         return error
       } else {
         response.body = JSON.parse(body);
-        console.log('LOCATION response-body-length: ', response.body.length)
         resolve(response.body);
       }
     });

@@ -1,10 +1,8 @@
 angular.module('inspector.search', [])
 .controller('SearchFormController', function($location, $http, $routeParams, Search, ResultService) {
-  console.log('SearchCtrl active!')
   var controller = this;
  
   this.searchForInfo = function(info){
-    console.log('search called on SearchCtrl! + info: ', info)
 
     //parse input here
 
@@ -61,6 +59,5 @@ angular.module('inspector.search', [])
 
     }
   };
-});
-
-SearchFormController.$inject = ['$location', '$http', '$routeParams', 'Search', 'ResultService']
+})
+.$inject = ['$location', '$http', '$routeParams', 'Search', 'ResultService']

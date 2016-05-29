@@ -2,10 +2,6 @@ module.exports = function(grunt){
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
     uglify: {
-      options:{
-        report: 'min',
-        mangle: false
-      },
       build: {
         src: ['client/app/**/*.js', 'server/**/*.js'],
         dest: 'build/js/main.min.js'
