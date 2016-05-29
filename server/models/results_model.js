@@ -1,4 +1,3 @@
-var appToken = require('../lib/appToken').appToken;
 var request = require('request');
 
 var mock_result = require('../../test/server/models/zip_78728_results.js');
