@@ -15,7 +15,7 @@ var angular = Path.resolve(__dirname, '../node_modules/')
 routes.use('/scripts', express.static(angular));
 
 //api routes
-routes.use('/api', results_api, function(){console.log('made it to server.js')});
+routes.use('/api', results_api);
 
 if(process.env.NODE_ENV !== 'test'){
   routes.get('/*', function(request, response){
