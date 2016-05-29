@@ -1,7 +1,7 @@
 angular.module('inspector', [
-  'inspector.search',
-  'inspector.results',
   'inspector.location',
+  'inspector.results',
+  'inspector.search',
   'inspector.services',
   'ngRoute'
   ])
