@@ -23,6 +23,6 @@ angular.module('inspector.results', [])
       $location.path('/location');
     })
   }
-
 })
 .$inject = ['$routeParams', '$location', 'ResultService', 'Search']
+

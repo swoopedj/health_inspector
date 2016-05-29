@@ -4,3 +4,4 @@ angular.module('inspector.location', [])
   this.inspections = ResultService.inspections;
 })
 .$inject = ['ResultService']
+

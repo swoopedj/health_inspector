@@ -61,3 +61,4 @@ angular.module('inspector.search', [])
   };
 })
 .$inject = ['$location', '$http', '$routeParams', 'Search', 'ResultService']
+
