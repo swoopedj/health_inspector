@@ -3,7 +3,8 @@ module.exports = function(grunt){
     pkg: grunt.file.readJSON('package.json'),
     uglify: {
       options:{
-        manage: false
+        report: 'min',
+        mangle: false
       },
       build: {
         src: ['client/app/**/*.js', 'server/**/*.js'],
