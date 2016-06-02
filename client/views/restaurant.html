@@ -1,17 +1,20 @@
 <div class="restaurant-container">
+<h2 class="back-button"><a onclick="history.back()"> < Results </a> </h2>
 <h2 class="location-name">
 {{LocationCtrl.inspections[0].restaurant_name}}
 </h2>
-  <div class='inspections-container' ng-repeat='inspection in LocationCtrl.inspections'>
-    <div class='location-card'>
-      
-      <strong>Inspection Date:</strong> {{inspection.inspection_date | date}} <br>
-      <strong>Reason:</strong> {{inspection.process_description}}<br>
-      <strong>Score:</strong> {{inspection.score}}
-      
-      <div class="location-score-block">
-        <span ng-class="{'warning-score': inspection.score < 60, 'failing-score' : inspection.score < 50}" >{{inspection.score}}</span>
-      
+  <div class="inspections-wrapper">
+    <div class='inspections-container' ng-repeat='inspection in LocationCtrl.inspections'>
+      <div class='location-card'>
+        
+        <strong>Inspection Date:</strong> {{inspection.inspection_date | date}} <br>
+        <strong>Reason:</strong> {{inspection.process_description}}<br>
+        <strong>Score:</strong> {{inspection.score}}
+        
+        <div class="location-score-block">
+          <span ng-class="{'warning-score': inspection.score < 60, 'failing-score' : inspection.score < 50}" >{{inspection.score}}</span>
+        
+        </div>
       </div>
     </div>
   </div>

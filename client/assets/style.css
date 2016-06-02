@@ -50,11 +50,27 @@ input[type=text] {
   margin: auto;
 }
 
+.back-button {
+  color: #EAB311;
+  font-family: calibri,helvetica,sans-serif;
+  margin: auto;
+  text-shadow:
+    -1px -1px 0 #146096,
+    1px -1px 0 #146096,
+    -1px 1px 0 #146096,
+    1px 1px 0 #146096; 
+}
+
 .location-name{
   color: #185888;
   font-family: calibri,helvetica,sans-serif;
-  margin: auto;
+  display: inline-block;
   text-align: center;
+  text-shadow:
+    -1px -1px 0 #E2F4FC,
+    1px -1px 0 #E2F4FC,
+    -1px 1px 0 #E2F4FC,
+    1px 1px 0 #E2F4FC; 
 }
 
 .result-card {
@@ -62,7 +78,7 @@ input[type=text] {
   font-family: calibri,helvetica,sans-serif;
   padding: 5px;
   text-align: center;
-  width: 30%;
+  width: 40%;
   background-color: rgba(50, 50, 50, 0.75);
   border-radius: 10px;
   font-size: 1em;
@@ -77,12 +93,20 @@ input[type=text] {
   font-size: .85em;
 }
 
+.restaurant-container {
+  text-align: center;
+}
+
+.inspections-wrapper {
+  margin-top: 10px
+}
+
 .location-card {
   color: #E2F4FC;
   font-family: calibri,helvetica,sans-serif;
   padding: 5px 10px 5px 10px;
   text-align: left;
-  width: 30%;
+  width: 40%;
   background-color: rgba(50, 50, 50, 0.75);
   border-radius: 10px;
   font-size: 1em;
