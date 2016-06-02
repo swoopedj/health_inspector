@@ -26,7 +26,8 @@ a:link {
   width: 60%;
   padding: 10px;
 	color: #EAB311;
-	font-size: 3em;
+	/*font-size: 3em;*/
+  font-size: 4vw;
 	text-shadow:
     -1px -1px 0 #146096,
     1px -1px 0 #146096,
