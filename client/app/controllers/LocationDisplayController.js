@@ -1,7 +1,11 @@
 angular.module('inspector.location', [])
-.controller('LocationDisplayController', function(ResultService) {
+.controller('LocationDisplayController', function($scope, ResultService) {
   var controller = this;
   this.inspections = ResultService.inspections;
+  $scope.goBack = function(){
+    window.history.go(-2);
+
+  }
 })
-.$inject = ['ResultService']
+.$inject = ['$scope', 'ResultService']
 
