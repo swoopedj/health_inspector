@@ -26,8 +26,8 @@ a:link {
   width: 60%;
   padding: 10px;
 	color: #EAB311;
-	/*font-size: 3em;*/
-  font-size: 4vw;
+	font-size: 3em;
+  /*font-size: 4vw;*/
 	text-shadow:
     -1px -1px 0 #146096,
     1px -1px 0 #146096,
@@ -44,7 +44,7 @@ a:link {
   text-align: center;
 }
 input[type=text] {
-  width: 80%;
+  width: 60%;
   margin: 0 auto; 
 }
 
@@ -93,7 +93,7 @@ input[type=text] {
   font-family: calibri,helvetica,sans-serif;
   padding: 5px;
   text-align: center;
-  width: 40%;
+  width: 50%;
   background-color: rgba(50, 50, 50, 0.75);
   border-radius: 10px;
   font-size: 1em;
@@ -150,6 +150,22 @@ input[type=text] {
 
 .failing-score {
   color: red;
+}
+
+@media only screen and (max-width: 768px) {
+
+  .main-title: {
+    font-size: 1.5em;
+  }
+
+  .location-card {
+    width: 90%;
+  }
+
+  input {
+    width: 90%;
+  }
+
 }
 
 
