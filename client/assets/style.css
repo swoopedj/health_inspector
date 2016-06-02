@@ -43,9 +43,23 @@ a:link {
   text-align: center;
 }
 input[type=text] {
-  width: 40%;
+  width: 80%;
   margin: 0 auto; 
 }
+
+.results-main-title {
+  margin: 0 auto;
+  text-align: center;
+  width: 60%;
+  padding: 10px;
+  color: #EAB311;
+  text-shadow:
+    -1px -1px 0 #146096,
+    1px -1px 0 #146096,
+    -1px 1px 0 #146096,
+    1px 1px 0 #146096; 
+}
+
 .results-wrapper {
   margin: auto;
 }
