@@ -1,7 +1,12 @@
 <div class="search-container">
+  <nav>
+    <a href="#/search">
+      <h1 class="main-title">Austin Health Inspector</h1>
+    </a>
+  </nav>
   <div class="search-wrapper">
     <form name="searchForm" id="search-form">
-        <input type="text" ng-model="info" placeholder="Enter restaurant name or zip code">
+        <input type="text" ng-model="info" placeholder="Enter restaurant name or zip code"><br>
         <button ng-click='SearchCtrl.searchForInfo(info)'>Search</button>
     </form>
   </div>
